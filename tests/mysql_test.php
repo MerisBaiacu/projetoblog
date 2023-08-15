@@ -4,9 +4,9 @@ require_once '../core/conexao_mysql.php';
 require_once '../core/sql.php';
 require_once '../core/mysql.php';
 
-insert_teste ('Bruno', 'brunotelini@gmail.com', '12321');
+insert_teste ('Meris', 'baiacu@gmail.com', '121212');
 buscar_teste();
-update_teste(38, 'cirilo', 'paulista@gmail.com');
+update_teste(38, 'muliro', 'erreifuimlka@gmail.com');
 buscar_teste();
 
 //Teste inserção banco de dados
