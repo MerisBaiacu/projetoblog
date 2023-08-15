@@ -35,7 +35,7 @@ function insere (string $entidade, array $dados) : bool
 function atualiza(string $entidade, array $dados, array $criterio = []) : bool
 {
     $retorno = false;
-
+    
     foreach ($dados as $campo => $dado) {
         $coringa_dados[$campo] = '?';
         $tipo[] = gettype($dado) [0];
