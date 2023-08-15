@@ -6,7 +6,5 @@ function limparDados(string $dado) :string
     $retorno = htmlentities(strip_tags($dado, $tags));
 
     return $retorno;
-
-
 }
 ?>
