@@ -4,9 +4,9 @@ require_once '../core/conexao_mysql.php';
 require_once '../core/sql.php';
 require_once '../core/mysql.php';
 
-insert_teste ('3', 'muito ruim','1','1');
+insert_teste ('5', 'Melhorem','1','1');
 buscar_teste();
-update_teste(1, '10', 'Repensei, muito bom','1','1');
+update_teste(1, '8', 'Melhorou, da pro gasto','1','1');
 buscar_teste();
 
 //Teste inserção banco de dados
