@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <title>Document</title>
-    <link rel="styleshet"
+    <link rel="stylesheet"
           href="lib/bootstrap-4.2.1-dist/css/bootstrap.min.css">
 </head>
 <body>
