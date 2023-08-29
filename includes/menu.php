@@ -3,7 +3,7 @@
         Menu
     </div>
     <div class = "card-body">
-        <ul class="nav flex-cloumn">
+        <ul class="nav flex-column">
             <li class = "nav-item">
                 <a class="nav link" href="index.php">Home</a>
             </li>
