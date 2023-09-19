@@ -5,7 +5,7 @@
         <link rel="stylesheet"
             href="lib/bootstrap-4.2.1-dist/css/bootstrap.min.css">
     </head>
-    <body>
+    <body style = "background-color: #2f373d">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -59,7 +59,7 @@
 
                     ?>
                     <table class="table table-bordered table-hover table-striped table-responsive{-sm|-md|-lg|-xl}">
-                    <thead>
+                    <thead style = "color:white">
                         <tr>
                             <td>Nome</td>
                             <td>E-mail</td>
@@ -68,7 +68,7 @@
                             <td>Administrador</td>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody style = "color:white">
                         <?php
                             foreach($result as $entidade):
                                 $data = date_create($entidade['data_criacao']);

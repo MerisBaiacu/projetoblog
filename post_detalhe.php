@@ -34,7 +34,7 @@
         <link rel="stylesheet" 
             href="lib/bootstrap-4.2.1-dist/css/bootstrap.min.css">
     </head>
-    <body>
+    <body style = "background-color: #2f373d">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -50,11 +50,11 @@
                 </div>
                 <div class="col-md-10" style="padding-top: 50px;">
                     <div class="card-body">
-                        <h5 class="card-title"><?php echo $post['titulo']?></h5>
-                        <h5 class="card-subtitle mb-2 text-muted">
+                        <h5 style = "color:white" class="card-title"><?php echo $post['titulo']?></h5>
+                        <h5 style = "color:white" class="card-subtitle mb-2 text-muted">
                             <?php echo $data_post?> Por <?php echo $post['nome']?>
                         </h5>
-                        <div class="card-text">
+                        <div style = "color:white" class="card-text">
                             <?php echo html_entity_decode($post['texto']) ?>
                         </div>
                     </div>

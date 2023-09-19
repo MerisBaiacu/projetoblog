@@ -1,9 +1,9 @@
-<div class="card">
+<div class="card bg-dark">
     <div class = "card-header">
-        Menu
+        <p style = "color:white">Menu<p>
     </div>
-    <div class = "card-body">
-        <ul class="nav flex-column">
+    <div class = "card-body dark">
+        <ul class="nav flex-column ">
             <li class = "nav-item">
                 <a class="nav link" href="index.php">Home</a>
             </li>

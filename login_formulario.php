@@ -5,7 +5,7 @@
         <link rel="stylesheet"
             href="lib/bootstrap-4.2.1-dist/css/bootstrap.min.css">
     </head>
-    <body>
+    <body style = "background-color: #2f373d">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -17,17 +17,17 @@
                     <?php include 'includes/menu.php'; ?>
                 </div>
                 <div class="col-md-10" style="padding-top: 50px;">
-                    <div class="card-header">Login</div>
+                    <div class="card-header" style = "color:white">Login</div>
                     <div class="card-body">
                         <form method="post" action="core/usuario_repositorio.php">
                             <input type="hidden" name="acao" value="login">
                             <div class="form-group">
-                                <label for="email">E-mail</label>
+                                <label style = "color:white" for="email">E-mail</label>
                                 <input class="form-control" type="text"
                                 required id="email" name="email">
                             </div>
                             <div class="form-group">
-                                <label for="senha">Senha</label>
+                                <label style = "color:white" for="senha">Senha</label>
                                 <input class="form-control" type="password"
                                 required id="senha" name="senha">
                             </div>

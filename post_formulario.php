@@ -5,7 +5,7 @@
         <link rel="stylesheet"
             href="lib/bootstrap-4.2.1-dist/css/bootstrap.min.css">
     </head>
-    <body>
+    <body style = "background-color: #2f373d">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -47,26 +47,26 @@
                         }
                     ?>
 
-                    <h2>Post</h2>
+                    <h2 style = "color:white">Post</h2>
                     <form method="post" action="core/post_repositorio.php">
-                        <input type="hidden" name="acao"
+                        <input style = "color:white" type="hidden" name="acao"
                             value="<?php echo empty($id) ? 'insert' : 'update' ?>">
                         <input type="hidden" name="id"
                             value="<?php echo $entidade['id'] ?? '' ?>">
                         <div class="form-group">
-                                <label for="titulo">Título:</label>
+                                <label style = "color:white" for="titulo">Título:</label>
                                 <input class="form-group" type="text"
                                     required id="titulo" name="titulo"
                                     value="<?php echo $entidade['titulo'] ?? '' ?>">
                         </div>
                         <div class="form-group">
-                                <label for="texto">Texto:</label>
+                                <label style = "color:white" for="texto">Texto:</label>
                                 <textarea class="form-control" type="text"
                                     required id="texto" name="texto" rows="5">
                                     <?php echo $entidade['texto'] ?? '' ?></textarea>
                         </div>
                         <div class="form-group">
-                            <label for="texto">Postar em:</label>
+                            <label style = "color:white" for="texto">Postar em:</label>
                             <?php 
                                 $data = (!empty($entidade['data_postagem']))?
                                     explode(' ', $entidade['data_postagem'])[0] : '';

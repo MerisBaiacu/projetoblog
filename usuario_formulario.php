@@ -4,7 +4,7 @@
         <link rel="stylesheet"
               href="lib/bootstrap-4.2.1-dist/css/bootstrap.min.css">
     </head>
-    <body>
+    <body style = "background-color: #2f373d">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -38,27 +38,27 @@
                             $entidade = $retorno[0];
                         }
                     ?>
-                    <h2>Usuário</h2>
+                    <h2 style = "color:white">Usuário</h2>
                     <form method="post" action="core/usuario_repositorio.php">
                         <input type="hidden" name="acao"
                                value="<?php echo empty($id) ? 'insert' : 'update' ?>">
                         <input type="hidden" name="id"
                                value="<?php echo $entidade['id'] ?? '' ?>">
                         <div class="form-group">
-                            <label for="nome">Nome</label>
+                            <label style = "color:white" for="nome">Nome</label>
                             <input class="form-control" type="text"
                                 required id="nome" name="nome"
                                 value="<?php echo $entidade['nome'] ?? '' ?>">
                         </div>
                         <div class="form-group">
-                            <label for="email">Email</label>
+                            <label style = "color:white" for="email">Email</label>
                             <input class="form-control" type="text"
                                 required id="email" name="email"
                                 value="<?php echo $entidade['email'] ?? '' ?>">
                         </div>
                         <?php if(!isset($_SESSION['login'])): ?>
                         <div class="form-group">
-                            <label for="senha">Senha</label>
+                            <label style = "color:white" for="senha">Senha</label>
                             <input class="form-control" type="text"
                                 required id="senha" name="senha">
                         </div>

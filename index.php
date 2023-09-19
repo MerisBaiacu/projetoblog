@@ -5,7 +5,7 @@
         <link rel="stylesheet"
               href="lib/bootstrap-4.2.1-dist/css/bootstrap.min.css">
     </head>
-    <body>
+    <body style = "background-color: #2f373d" >
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -24,7 +24,7 @@
             </div>
             <div class="col-md-10" style="padding-top: 50px;">
                 <!--Conteúdo //-->
-                <h2>Página Inicial</h2>
+                <h2 style = "color:white">Página Inicial</h2>
                 <?php
                     include 'includes/busca.php';
                 ?>
@@ -76,7 +76,7 @@
                             $data = date_create($post['data_postagem']);
                             $data = date_format($data, 'd/m/Y H:i:s');
                         ?>
-                        <a class="list-group-item list-group-item-action"
+                        <a style = "color:white" class="list-group-item list-group-item-action bg-dark"
                             href="post_detalhe.php?post=<?php echo $post['id']?>">
                             <strong><?php echo $post['titulo']?></strong>
                             [<?php echo $post['nome']?>]
