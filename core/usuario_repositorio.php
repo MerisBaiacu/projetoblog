@@ -4,7 +4,7 @@ require_once '../includes/funcoes.php';
 require_once 'conexao_mysql.php';
 require_once 'sql.php';
 require_once 'mysql.php';
-$salt = '$exemplosaltifsp';
+$salt = 'mariana';
 
 foreach($_POST as $indice => $dado){
     $$indice = limparDados($dado);
@@ -15,6 +15,11 @@ foreach($_GET as $indice => $dado){
 }
 switch($acao){
     case 'insert':
+        $tm = trim($nome);
+        $te = trim($email);
+        $ts = trim($senha);
+        if(empty($tm && $te && $ts )){
+        }else{
         $dados =[
             'nome' => $nome,
             'email' => $email,
@@ -25,7 +30,7 @@ switch($acao){
                 'usuario',
                 $dados
             );
-
+        }
             break;
 
     case 'update':

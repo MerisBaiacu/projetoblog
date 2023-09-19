@@ -24,12 +24,12 @@
                             <div class="form-group">
                                 <label for="email">E-mail</label>
                                 <input class="form-control" type="text"
-                                    require="required" id="email" name="email">
+                                required id="email" name="email">
                             </div>
                             <div class="form-group">
                                 <label for="senha">Senha</label>
                                 <input class="form-control" type="password"
-                                    require="required" id="senha" name="senha">
+                                required id="senha" name="senha">
                             </div>
                             <div class="text-right">
                                 <button class="btn btn-success"

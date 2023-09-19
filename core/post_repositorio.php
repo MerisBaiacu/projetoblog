@@ -18,6 +18,13 @@ $id = (int)$id;
 
 switch($acao){
     case 'insert':
+
+        $tti = trim($titulo);
+        $tt = trim($texto);
+        if(empty($tti && $tt)){
+
+        }else{
+
         $dados =[
             'titulo' => $titulo,
             'texto' => $texto,
@@ -29,7 +36,7 @@ switch($acao){
             'post',
             $dados
         );
-
+        }
         break;
 
         case 'update':
